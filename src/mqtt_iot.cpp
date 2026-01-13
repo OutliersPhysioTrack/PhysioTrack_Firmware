@@ -8,8 +8,8 @@ const char* password = "kitabisa12";
 const char* mqtt_server   = "broker.hivemq.com";
 const int   mqtt_port     = 1883;
 
-const char* topicSensorOut = "Outliers/juara1/sensor";
-const char* topicOutputIn  = "Outliers/juara1/output";
+const char* topicSensorOut = "outliers/juara1/sensor";
+const char* topicOutputIn  = "outliers/juara1/output";
 
 // GLOBAL OBJECTS
 WiFiClient espClient;
@@ -33,8 +33,6 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
     Serial.print(topic);
     Serial.print(" | Message: ");
     Serial.println(msg);
-
-    // Contoh: kalau pesan mengandung "OPEN" → nyalakan LED/buzzer
     if (msg.indexOf("OPEN") != -1) {}
 }
 
