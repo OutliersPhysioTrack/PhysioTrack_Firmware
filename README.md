@@ -1,4 +1,4 @@
-# ESP32 Multi-Sensor Health/Environment Monitor (Edge AI + MQTT)
+# PhysioTrack Firmware
 
 Firmware ESP32 untuk membaca beberapa sensor biometrik & lingkungan, menjalankan klasifikasi **Edge Impulse (on-device)**, lalu mengirim data ke broker **MQTT** dalam format JSON. Sistem juga memiliki **buzzer non-blocking** yang berbunyi berdasarkan label prediksi (`safe / warning / danger`).
 
